@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 
 const Textarea = ({
-  labelFor,
   labelText,
   textareaName,
   textareaPlaceholder,
@@ -11,7 +10,7 @@ const Textarea = ({
   <div className='textarea'>
     <label
       className='textarea-label'
-      htmlFor={labelFor}
+      htmlFor={textareaName}
     >
       {labelText}
     </label>
@@ -26,7 +25,6 @@ const Textarea = ({
 )
 
 Textarea.propTypes = {
-  labelFor: PropTypes.string,
   labelText: PropTypes.string,
   textareaName: PropTypes.string,
   textareaPlaceholder: PropTypes.string,

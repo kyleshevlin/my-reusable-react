@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 
 const Input = ({
-  labelFor,
   labelText,
   inputType,
   inputName,
@@ -12,7 +11,7 @@ const Input = ({
   <div className='input'>
     <label
       className='input-label'
-      htmlFor={labelFor}
+      htmlFor={inputName}
     >
       {labelText}
     </label>
@@ -28,7 +27,6 @@ const Input = ({
 )
 
 Input.propTypes = {
-  labelFor: PropTypes.string,
   labelText: PropTypes.string,
   inputType: PropTypes.string,
   inputName: PropTypes.string,

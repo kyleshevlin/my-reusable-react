@@ -25,7 +25,7 @@ Form.propTypes = {
   formClassName: PropTypes.string,
   buttonClassName: PropTypes.string,
   submitValue: PropTypes.string,
-  onSubmit: PropTypes.func
+  onSubmit: PropTypes.func.isRequired
 }
 
 Form.defaultProps = {
